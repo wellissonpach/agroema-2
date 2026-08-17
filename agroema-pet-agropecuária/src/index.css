@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-agro-dark: #33452E;
+    --color-agro-primary: #5D8C3A;
+    --color-agro-light: #88B84A;
+    --color-agro-accent: #C8A43A;
+    --color-agro-cream: #F5F6F2;
+    --color-agro-sand: #E8EAE2;
+    --color-agro-text: #20241F;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Geometric Dot Grid Background */
+.bg-geometric-dots {
+  background-image: radial-gradient(#5D8C3A 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+.bg-geometric-dots-dark {
+  background-image: radial-gradient(rgba(200, 164, 58, 0.25) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Custom utility helpers for brand colors */
+.bg-agro-dark { background-color: #33452E; }
+.text-agro-dark { color: #33452E; }
+.border-agro-dark { border-color: #33452E; }
+
+.bg-agro-primary { background-color: #5D8C3A; }
+.text-agro-primary { color: #5D8C3A; }
+.border-agro-primary { border-color: #5D8C3A; }
+
+.bg-agro-light { background-color: #88B84A; }
+.text-agro-light { color: #88B84A; }
+.border-agro-light { border-color: #88B84A; }
+
+.bg-agro-accent { background-color: #C8A43A; }
+.text-agro-accent { color: #C8A43A; }
+.border-agro-accent { border-color: #C8A43A; }
+
+.bg-agro-cream { background-color: #F5F6F2; }
+.bg-agro-sand { background-color: #E8EAE2; }
+.text-agro-text { color: #20241F; }
+
+/* Custom gentle pulse animation */
+@keyframes pulse-subtle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 4s infinite ease-in-out;
+}
+

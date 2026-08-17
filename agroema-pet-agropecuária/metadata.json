@@ -1,0 +1,6 @@
+{
+  "name": "AgroEma - Pet & Agropecuária",
+  "description": "Landing page oficial da AgroEma: tudo para cuidar dos seus animais e criação em um só lugar, com atendimento próximo e consultoria via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
